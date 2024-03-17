@@ -1,6 +1,6 @@
 def addtext(list):
     print("какую задачу хотите создать:list1,list2,list3,list4,list5 ?")
-    input()
+    input("напиши какую")
     if list1:
         list1 = input("введите название задачи:")
         print(list1)
