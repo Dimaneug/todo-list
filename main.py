@@ -1,3 +1,8 @@
+def write_tasks(tasks):
+    with open("file", "w", encoding="utf-8") as file:
+        for task in tasks:
+            file.write(task+"\n")
+
 def ui():
     while 1:
         print("1 добавить задачу")
@@ -23,6 +28,3 @@ def ui():
             print_tasks(tasks)
         elif a =='7':
             quit()
-
-
-
