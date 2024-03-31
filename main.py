@@ -18,6 +18,7 @@ def remove_tasks(tasks: list):
             break
         if a==3:
             continue
+    return tasks
    
 def print_tasks():
     pass
