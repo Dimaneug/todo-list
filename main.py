@@ -1,3 +1,7 @@
+def print_tasks(tasks):
+    for i, task in enumerate(tasks, 1):
+        print(i, task)
+
 def add_task(tasks):
     task = input("Введите название задачи: ")
     tasks.append(task)
