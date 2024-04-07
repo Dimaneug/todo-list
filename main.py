@@ -1,3 +1,8 @@
+def add_task(tasks):
+    task = input("Введите название задачи: ")
+    tasks.append(task)
+    return tasks
+    
 def remove_tasks(tasks: list):
     
     list_save = tasks.copy()
