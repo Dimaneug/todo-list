@@ -13,6 +13,7 @@ def write_tasks(tasks):
             file.write(task+"\n")
 
 def ui():
+    tasks = []
     while 1:
         print("1 добавить задачу")
         print("2 Удалить задачу")
@@ -24,13 +25,13 @@ def ui():
 
         a = input('ведите номер команды')
         if a =='1':
-            add_task()
+            tasks = add_task(tasks)
         elif a =='2':
-            remove_task()
+            tasks = remove_task(tasks)
         elif a =='3':
-            edit_task()
+            tasks = edit_task(tasks)
         elif a =='4':
-            read_tasks()
+            tasks = read_tasks()
         elif a =='5':
             write_tasks(tasks)
         elif a == '6':
